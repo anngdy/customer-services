@@ -79,6 +79,17 @@
 			  $('#hidden_fields').hide();
 			  $('#modal_dateSelect').hide();			  
 			});
+
+			$('#contact_reason').on('change', function() {
+			  if($(this).val() == '2'){
+			    $('#hidden_fields').show();
+			  } else if ($(this).val() == '1'){
+			  		$('#hidden_fields').hide();
+			   		$('#modal_dateSelect').show();
+			  } else {
+			  	alert("Por favor, selecione um motivo!");
+			  }
+			});
 		</script>
     </body>
 </html>
