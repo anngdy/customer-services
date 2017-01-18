@@ -90,6 +90,41 @@
 			  	alert("Por favor, selecione um motivo!");
 			  }
 			});
+
+			$('#close_modal').on('click', function() {
+				$('#modal_dateSelect').hide();
+			});
+
+			$('#calculate').on('click', function() {
+	       		moment.locale('pt-BR');
+
+	       		var ini_price = 1000.00;
+	       		var fin_price = 0;
+	       		var inc = 10.00
+
+				var date = document.modal_frm.fld_exp.value; 
+				var dmy = date.split('/');
+				var new_date = new Date(parseInt(dmy[2], 10),
+										parseInt(dmy[1], 10) - 1,
+										parseInt(dmy[0], 10));
+
+				var date_today = moment().format('L');
+				var dmy_today = date_today.split('/')
+				var new_date_today = new Date(parseInt(dmy_today[2], 10),
+											  parseInt(dmy_today[1], 10) - 1,
+											  parseInt(dmy_today[0], 10));
+
+				var diff = Math.round(Math.abs((new_date_today.getTime() - new_date.getTime())/(24*60*60*1000)));
+
+				if (diff <= 3){
+					fin_price = ini_price + inc;
+				} else if (diff > 3) {
+					fin_price = ini_price + inc + (diff * 2.50);
+				}
+
+			 	$('#modal_dateSelect').hide();
+			 	$('#modal_showResults').show();
+			});
 		</script>
     </body>
 </html>
