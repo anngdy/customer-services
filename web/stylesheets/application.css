@@ -1,0 +1,138 @@
+/*  
+    Custom stylesheets by https://github.com/anngdy for personal use,
+    based on Bootstrap v3.3.7 (http://getbootstrap.com).
+*/
+
+body {
+  font-family: monaco, Consolas, "Lucida Console", monospace ;
+  font-size: 11px;
+  line-height: 18px;
+  margin:0
+}
+
+div#title{
+	margin-left: 845px;
+	margin-bottom: -40px;
+	display: inline-block;
+	border-radius: 12px; 
+	/*border-radius: 8px; 
+	width: 25%*/	
+	background-color: #bcc7ff;
+	border: 1.2px solid #ffffff;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 11px;
+	font-size: 16px;
+	width: 10%
+}
+
+div#content{
+    border-radius: 16px;
+    border: 2px solid #ffffff;
+	background-color: #e8ecff;
+	box-shadow: 0.8px 0px 10px #e8e8e8;
+	max-width: 400px;
+	margin: 0 auto; 
+}
+
+div#form_content{
+	padding: 20px;	
+}
+
+label{
+	font-size: 11px;
+	color: #737373;
+	margin-left: 25px;
+	margin-bottom: 5px;
+	margin-top: 18px;
+} 
+
+input[type=reg_frm_fld]{
+	outline: none;
+	transition: .2s all linear;
+	margin-left: 25px;
+	margin-bottom: 20px;
+	display: block;
+	border: 1.5px solid silver;
+	border-radius: 3px;
+	padding: 8px;
+	-webkit-box-sizeing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 85% 
+}
+
+input[type=mdl_frm_fld]{
+	outline: none;
+	transition: .2s all linear;
+	margin-left: 35px;
+	margin-bottom: 20px;
+	display: block;
+	border: 1.5px solid silver;
+	border-radius: 3px;
+	padding: 8px;
+	-webkit-box-sizeing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 40%
+}
+
+select{
+	top:100%;
+	left:0;
+	z-index:1000;
+	text-align:center;
+	background-color:#fff;
+	border-radius:4px;
+	outline: none;
+	transition: .2s all linear;
+	margin-left: 25px;
+	margin-bottom: 20px;
+	display: block;
+	border: 1.5px solid silver;
+	border-radius: 3px;
+	padding: 8px;
+	-webkit-box-sizeing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 85% 
+	
+}
+
+input[type=fld_message]{
+	outline: none;
+	transition: .2s all linear;
+	margin-left: 25px;
+	margin-bottom: 10px;
+	display: block;
+	border: 1.5px solid silver;
+	border-radius: 3px;
+	padding: 8px;
+	-webkit-box-sizeing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 305px;
+	height: 305px;
+}
+
+input[type=submit]{
+	padding: 5px 10px 5px 10px;
+	margin-top: 30px;
+	margin-bottom: 8px;
+	margin-left: 45px;
+	background-color: #bcc7ff;
+	border-radius: 4px;
+	border: 0.5px solid #e8e8e8;
+	text-transform: uppercase;
+	text-align: center;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 18px;
+	width: 75%;
+}
+
+.js #hidden_fields {
+    display:none; /* hide for JS enabled browsers */
+} 
