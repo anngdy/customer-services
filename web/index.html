@@ -97,7 +97,11 @@
 			$(document).ready(function(){
 			  $('#hidden_fields').hide();
 			  $('#modal_dateSelect').hide();
-			  $("#cpf").mask("999.999.999-99");		  
+			  $("#cpf").mask("999.999.999-99");	
+			  $('#datepicker1').Zebra_DatePicker({
+			    direction: [1, 15],
+			    disabled_dates: ['* * * 0,6']
+			  });	  
 			});
 
 			$('#contact_reason').on('change', function() {
