@@ -11,10 +11,12 @@ body {
 }
 
 div#title{
-	margin-left: 845px;
+	margin-top: 50px;
+	margin-left: 720px;
+	margin-right: 715px;
 	margin-bottom: -40px;
 	display: inline-block;
-	border-radius: 12px; 
+	border-radius: 8px; 
 	/*border-radius: 8px; 
 	width: 25%*/	
 	background-color: #bcc7ff;
@@ -24,21 +26,22 @@ div#title{
 	text-align: center;
 	text-transform: uppercase;
 	padding: 11px;
-	font-size: 16px;
-	width: 10%
+	font-size: 26px;
+	width: 25%
 }
 
 div#content{
-    border-radius: 16px;
+    border-radius: 10px;
     border: 2px solid #ffffff;
 	background-color: #e8ecff;
 	box-shadow: 0.8px 0px 10px #e8e8e8;
-	max-width: 400px;
+	max-width: 700px;
 	margin: 0 auto; 
 }
 
 div#form_content{
-	padding: 20px;	
+	padding: 25px;	
+	margin-left: 35px;
 }
 
 label{
@@ -113,7 +116,7 @@ input[type=fld_message]{
 	-webkit-box-sizeing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	width: 305px;
+	width: 515px;
 	height: 305px;
 }
 
@@ -121,7 +124,7 @@ input[type=submit]{
 	padding: 5px 10px 5px 10px;
 	margin-top: 30px;
 	margin-bottom: 8px;
-	margin-left: 45px;
+	margin-left: 55px;
 	background-color: #bcc7ff;
 	border-radius: 4px;
 	border: 0.5px solid #e8e8e8;
