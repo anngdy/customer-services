@@ -7,10 +7,13 @@
         <script src="javascript/jquery.maskedinput.min.js" type="text/javascript"></script>
         <script src="javascript/jquery.min.js" type="text/javascript"></script>
         <script src="javascript/jquery.zebra-datepicker.js" type="text/javascript"></script>
-        
+        <script src="javascript/jquery.mask.js" type="text/javascript"></script>
         <link href="stylesheets/datepicker.css" rel="stylesheet" type="text/css"/>
         <link href="stylesheets/application.css" rel="stylesheet" type="text/css"/>
         <link href="stylesheets/bootstrap_anna.css" rel="stylesheet" type="text/css"/>
+        <script src="javascript/moment.js" type="text/javascript"></script>
+        <script src="javascript/moment_locales.js" type="text/javascript"></script>
+        
         
         <title>AKN - ATENDIMENTO AO CLIENTE</title>
         <meta charset="UTF-8">
@@ -27,6 +30,9 @@
 	  	      
 			    <label>* E-MAIL:</label>
 		  	    <input type="reg_frm_fld" name="fld_email" placeholder="E-mail" />
+
+		  	    <label>* CPF:</label>
+		  	    <input type="reg_frm_fld" name="fld_cpf" placeholder="CPF" id="cpf">
 		  	    
 		  	    <label>* MOTIVO DO CONTATO: </label>
 		  	    <select name="contact_reason" id="contact_reason" class="select-header">
@@ -90,7 +96,8 @@
 
 			$(document).ready(function(){
 			  $('#hidden_fields').hide();
-			  $('#modal_dateSelect').hide();			  
+			  $('#modal_dateSelect').hide();
+			  $("#cpf").mask("999.999.999-99");		  
 			});
 
 			$('#contact_reason').on('change', function() {
@@ -138,6 +145,8 @@
 			 	$('#modal_dateSelect').hide();
 			 	$('#modal_showResults').show();
 			});
+
+
 		</script>
     </body>
 </html>
