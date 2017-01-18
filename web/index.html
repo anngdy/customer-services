@@ -1,16 +1,38 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<html lang="pt-br">
     <head>
-        <title>TODO supply a title</title>
+        <title>AKN - ATENDIMENTO AO CLIENTE</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <div id="title"> CONTATO: </div>
+		  <div id="content">
+		    <div id="form_content">
+		      <form name="frm_contatc" action="" method="POST" id="frm_contatc">
+
+		      	<label>* NOME:</label>
+		  	    <input type="reg_frm_fld" name="fld_name" placeholder="Nome"/>
+	  	      
+			    <label>* E-MAIL:</label>
+		  	    <input type="reg_frm_fld" name="fld_email" placeholder="E-mail" />
+		  	    
+		  	    <label>* MOTIVO DO CONTATO: </label>
+		  	    <select name="contact_reason" id="contact_reason" class="select-header">
+		  	      <option value="0">--- Selecione ---</option>
+		  	      <option value="0"> </option>
+		  	      <option value="1"> Re-emissão do Boleto Bancario</option>
+		  	      <option value="2"> Elogio/Sugestão/Reclamação</option>
+		  	    </select>
+
+		  	    <div id="hidden_fields">
+		  	      <label>* MENSAGEM:</label>
+		  	      <input type="fld_message" name="fld_message" id="hidden_fld_message">	  	    
+
+		          <input type="submit" name="send" value="OK"></input>
+		        </div>
+		      </form>
+		    </div>
+		</div>
     </body>
 </html>
