@@ -46,7 +46,7 @@
 		  	      <label>* MENSAGEM:</label>
 		  	      <input type="fld_message" name="fld_message" id="hidden_fld_message">	  	    
 
-		          <input type="submit" name="send" value="OK"></input>
+		          <input type="submit" name="send" value="OK" id="contact_message"></input>
 		        </div>
 		      </form>
 		    </div>
@@ -56,7 +56,7 @@
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
-		        <h3 class="modal-title" id="exampleModalLabel">Re-emissão do boleto bancário</h3s>	        
+		        <h2 class="modal-title" id="exampleModalLabel">Re-emissão do boleto bancário</h2>	        
 		      </div>
 		      <div class="modal-body">
 		      	<form name="modal_frm" action="" id="mdl_frm">
@@ -72,19 +72,6 @@
 
 		      </div>
 		    </div>
-		  </div>
-		</div>
-
-		<div class="modal" id="modal_showResults" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <h3 class="modal-title" id="exampleModalLabel">Re-emissão do boleto bancário</h3s>	        
-		      </div>
-		      <div class="modal-body">
-		      	*****  A NICE MODAL BODY
-		      </div>
-		     </div>
 		  </div>
 		</div>
 
@@ -146,11 +133,13 @@
 					fin_price = ini_price + inc + (diff * 2.50);
 				}
 
-			 	$('#modal_dateSelect').hide();
-			 	$('#modal_showResults').show();
+				alert("NOVO BOLETO GERADO! \nA nova data de vencimento definida é " + date + "\nE o valor do boleto (com juros acrescidos) é de R$" + fin_price);
 			});
 
-
+			$('#contact_message').on('click', function(){
+				alert("Mensagem enviada com sucesso!");
+			});
+			
 		</script>
     </body>
 </html>
